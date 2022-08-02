@@ -1,4 +1,5 @@
 function merge(arr1, arr2) {
+
 	let result = []
 	while (arr1.length && arr2.length) {
 		if (arr1[0] > arr2[0]) {
@@ -19,4 +20,5 @@ function mergeSort(arr) {
 	let mL = mergeSort(arrL)
 	let mR = mergeSort(arrR)
 	return merge(mL, mR)
+	
 }
